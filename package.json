@@ -1,0 +1,21 @@
+{
+  "name": "TIL-GraphQL",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/TeddyGhim/TIL-GraphQL.git",
+  "author": "jinzhengxun <kim.junghun@navercorp.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "dotenv": "^8.0.0",
+    "graphql-yoga": "^1.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  }
+}
