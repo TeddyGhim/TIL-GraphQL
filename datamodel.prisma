@@ -1,5 +1,5 @@
 type User {
-     id: ID! @id
+     id: ID! @id @unique
     username: String! @unique
     email: String! @unique
     firstName: String! @default(value: "")
@@ -13,7 +13,7 @@ type User {
 }
 
 type Post {
-    id: ID! @id
+     id: ID! @id @unique
     location: String
     caption: String!
     user: User!
@@ -23,20 +23,20 @@ type Post {
 }
 
 type Like {
-    id: ID! @id
+    id: ID! @id @unique
     user: User!
     post: Post!
 }
 
 type Comment {
-    id: ID! @id
+    id: ID! @id @unique
     text: String!
     user: User!
     post: Post!
 }
 
 type File {
-    id: ID! @id
+    id: ID! @id @unique
     url: String!
     post: Post!
 }
