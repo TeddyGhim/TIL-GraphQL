@@ -1,0 +1,6 @@
+endpoint: https://us1.prisma.sh/teddy-d3e947/TIL-GraphQL/dev
+datamodel: datamodel.prisma
+
+generate:
+  - generator: javascript-client
+    output: ./generated/prisma-client/
